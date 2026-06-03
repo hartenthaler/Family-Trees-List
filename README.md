@@ -71,3 +71,4 @@ With the help of GREG and HERMANN, the module has become increasingly mature. I 
 3. Replaced the undefined block context constant with the explicit webtrees block context.
 4. Improved English user interface texts and clarified that sorting uses the internal tree number.
 5. Documented the required lowercase module folder name `family-trees-list`.
+6. Fixed responsive layouts on narrow screens, especially clipped numbers in the capsule display. This resolves issue #12.
