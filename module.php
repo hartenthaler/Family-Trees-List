@@ -9,7 +9,12 @@ declare(strict_types=1);
 namespace TreesListModule;
 
 use Fisharebest\Webtrees\Registry;
+use Fisharebest\Webtrees\Services\HtmlService;
+use Fisharebest\Webtrees\Services\TreeService;
 
 require __DIR__ . '/TreesListModule.php';
 
-return Registry::container()->get(TreesListModule::class);
+return new TreesListModule(
+    Registry::container()->get(HtmlService::class),
+    Registry::container()->get(TreeService::class),
+);

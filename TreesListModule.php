@@ -44,8 +44,11 @@ class TreesListModule extends HtmlBlockModule implements ModuleCustomInterface,M
     private const DEFAULT_STYLE = 'list';   //默认布局：列表
 
     private TreeService $tree_service;
-    public function __construct(TreeService $tree_service)
+
+    public function __construct(HtmlService $html_service, TreeService $tree_service)
     {
+        parent::__construct($html_service);
+
         $this->tree_service = $tree_service;
     }
 
