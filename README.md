@@ -61,3 +61,11 @@ With the help of GREG and HERMANN, the module has become increasingly mature. I 
 1. Updated German translation
 2. Fixed the issue of automatic activation of the soft keyboard caused by CSS
 3. Corrected some non-standard grammar
+
+
+### 2.2.6.0 Version Update
+
+1. Updated the module for compatibility with webtrees 2.2.6.
+2. Replaced the deprecated `app()` helper with the webtrees registry container.
+3. Replaced the undefined block context constant with the explicit webtrees block context.
+4. Improved English user interface texts and clarified that sorting uses the internal tree number.
