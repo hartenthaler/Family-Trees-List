@@ -228,7 +228,7 @@ class TreesListModule extends HtmlBlockModule implements ModuleCustomInterface,M
     
     public function customModuleVersion(): string
     {
-        return '1.3.5';
+        return '2.2.6.0';
     }
 
 
