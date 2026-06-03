@@ -14,7 +14,7 @@ use Fisharebest\Webtrees\I18N;
 </style>
 
         <?php foreach ($all_trees as $tree ) : ?>
-            <div class="d-flex mb-2 border rounded">
+            <div class="d-flex flex-wrap mb-2 border rounded">
                 <div class="p-2 flex-grow-1 ">
                     <a href="<? echo e(route(TreePage::class,['tree'=>$tree->name()])); ?>">
                     <b><?= e($tree->title()) ?></b></a>
