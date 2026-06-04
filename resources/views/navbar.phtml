@@ -7,12 +7,14 @@ use Fisharebest\Webtrees\I18N;
 
 ?>
 <style>
-    .p-1:hover {  
-  /* 鼠标悬停时的背景颜色和字体颜色 */  
-  background-color: #888; /* 黑色背景 */  
-  color: #fff; /* 白色字体 */  
+    .family-trees-list .p-1:hover {
+        /* 鼠标悬停时的背景颜色和字体颜色 */
+        background-color: #888; /* 黑色背景 */
+        color: #fff; /* 白色字体 */
+    }
 </style>
 
+<div class="family-trees-list">
         <?php foreach ($all_trees as $tree ) : ?>
             <div class="d-flex flex-wrap mb-2 border rounded">
                 <div class="p-2 flex-grow-1 ">
@@ -38,3 +40,4 @@ use Fisharebest\Webtrees\I18N;
 				
             </div>
         <?php endforeach ?>
+</div>

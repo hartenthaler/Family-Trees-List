@@ -1,54 +1,55 @@
-        /* 父容器样式 */
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 5px; /* 设置内部填充来创建边距 */
-            border: 0px solid black;
-            width: 100%;
-        }
-
-        /* 子容器样式 */
-        .child {
-            flex: 2; /* 设置子容器的弹性比例为1 */
-            min-width: 320px; /* min-width: 300px;设置子容器的最小宽度 */
-            /* max-width: 380px; 设置子容器的最大宽度 */
-            /*height: 70px;*/
-            padding: 5px;
-            border: 1px solid;
-            margin-bottom: 10px; /* 设置垂直外边距 */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
-            transition: transform 0.3s ease; /* 添加过渡效果 */
-            border-radius: 5px; /* 设置圆角 */
-
-        }
-        .number{
-                          display: flex;  
-  justify-content: space-between; /* 项目之间均匀分布，第一个在左边，最后一个在右边 */  
-  /* 或者使用 space-around，这样会在项目之间和两端都添加相等的空间 */
-        }
-
-        /* 鼠标经过子容器时的样式 */
-        .child:hover {
-             transform: translateY(-3px); /* 向上移动子容器 */
-             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* 增加阴影效果 */}
-        
-         hr.custom-height {
-            height: 1px; /* 设置线条高度 */
-            border: none; /* 移除默认边框 */
-            border-top: 1px dashed #000; /* 虚线样式，颜色为黑色 */
-            margin: 3px 0; /* 设置线条上下外边距 */
-        }
-.zoom {
-        /* 使用filter: grayscale(100%)将图片转为灰色 */  
-    filter: grayscale(100%);  
-      
-    /* 可以添加一些过渡效果，使颜色变化更平滑 */  
-    transition: filter 0.3s ease-in-out; 
-    transition: transform 0.3s; /* 设置过渡效果 */
+/* 父容器样式 */
+.family-trees-list .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px; /* 设置内部填充来创建边距 */
+    border: 0 solid black;
+    width: 100%;
 }
 
-.zoom:hover {
+/* 子容器样式 */
+.family-trees-list .child {
+    flex: 2; /* 设置子容器的弹性比例为1 */
+    min-width: 320px; /* min-width: 300px;设置子容器的最小宽度 */
+    /* max-width: 380px; 设置子容器的最大宽度 */
+    /*height: 70px;*/
+    padding: 5px;
+    border: 1px solid;
+    margin-bottom: 10px; /* 设置垂直外边距 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    transition: transform 0.3s ease; /* 添加过渡效果 */
+    border-radius: 5px; /* 设置圆角 */
+}
+
+.family-trees-list .number {
+    display: flex;
+    justify-content: space-between; /* 项目之间均匀分布，第一个在左边，最后一个在右边 */
+    /* 或者使用 space-around，这样会在项目之间和两端都添加相等的空间 */
+}
+
+/* 鼠标经过子容器时的样式 */
+.family-trees-list .child:hover {
+    transform: translateY(-3px); /* 向上移动子容器 */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* 增加阴影效果 */
+}
+
+.family-trees-list hr.custom-height {
+    height: 1px; /* 设置线条高度 */
+    border: none; /* 移除默认边框 */
+    border-top: 1px dashed #000; /* 虚线样式，颜色为黑色 */
+    margin: 3px 0; /* 设置线条上下外边距 */
+}
+
+.family-trees-list .zoom {
+    /* 使用filter: grayscale(100%)将图片转为灰色 */
+    filter: grayscale(100%);
+
+    /* 可以添加一些过渡效果，使颜色变化更平滑 */
+    transition: filter 0.3s ease-in-out, transform 0.3s; /* 设置过渡效果 */
+}
+
+.family-trees-list .zoom:hover {
     transform: scale(1.2); /* 鼠标经过时放大1.2倍 */
-    filter: none; 
+    filter: none;
 }

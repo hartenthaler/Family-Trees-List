@@ -8,7 +8,7 @@ use Fisharebest\Webtrees\I18N;
 ?>
 <style>
             /* 父容器样式 */
-        .container {
+        .family-trees-list .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -17,23 +17,23 @@ use Fisharebest\Webtrees\I18N;
             width: 100%;
         }
 
-         .hr.custom-height {
+         .family-trees-list .hr.custom-height {
             height: 1; /* 设置线条高度 */
             border: none; /* 移除默认边框 */
              /* background-color: black;设置线条颜色 */
             border-top: 1px dashed #000; /* 虚线样式<br>颜色为黑色 */
             margin: 3px 0; /* 设置线条上下外边距 */
         }
-.zoom {
+.family-trees-list .zoom {
     transition: transform 0.3s; /* 设置过渡效果 */
        filter: none; 
 }
 
-.zoom:hover {
+.family-trees-list .zoom:hover {
     transform: scale(1.2); /* 鼠标经过时放大1.2倍 */
        filter: none; 
 }
-  .card1 {  
+  .family-trees-list .card1 {  
     min-width: 160px; /* min-width: 300px;设置子容器的最小宽度 */
     border: 1px solid #ccc;  
     border-radius: 5px;  
@@ -44,17 +44,17 @@ use Fisharebest\Webtrees\I18N;
     /*overflow: hidden;  */
   }  
           /* 鼠标经过子容器时的样式 */
-        .card1:hover {
+        .family-trees-list .card1:hover {
              transform: translateY(-3px); /* 向上移动子容器 */
              box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* 增加阴影效果 */}
     
-  .card1-header {  
+  .family-trees-list .card1-header {  
     background-color: #f2f2f2;  
     padding: 10px;  
   }  
     
 
-  .card1-body {  
+  .family-trees-list .card1-body {  
     padding: 10px;  
     height: auto;  
     overflow: hidden;
@@ -63,6 +63,7 @@ use Fisharebest\Webtrees\I18N;
     
 
 </style>
+<div class="family-trees-list">
   <div class="container">
         <?php foreach ($all_trees as $tree ) : ?>
             <div class="card1 col-sm-4">
@@ -85,4 +86,5 @@ use Fisharebest\Webtrees\I18N;
             </div>
         <?php endforeach ?>
               
+</div>
 </div>
